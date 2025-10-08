@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
@@ -25,21 +30,21 @@
     </nav>
     <main>
         <section id="sobre-mi">
-            <h2>Sobre mi</h2>
+            <h2 class="subtitle">Sobre mi</h2>
             <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
-                alt="Picsum" />
+                alt="Picsum" id="photo"/>
             <p>Soy un programador sin mucha experiencia, pero con deseo de aprender sobre el desarrollo de aplicaciones.
                 Puedes conocer mas sobre mi en <a href="https://github.com/SamuelChichande/SamuelChichande"
                     target="_blank">mi presentacion en GitHub</a>.</p>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <ol>
                 <li>Sin experiencia</li>
             </ol>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <table>
                 <thead>
                     <tr>
@@ -67,7 +72,7 @@
 
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <ul>
                 <li>Lenguajes: Java, Python, C, C++, Dart</li>
                 <li>Herramientas: VSCode</li>
@@ -76,22 +81,21 @@
 
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
             <article>
                 <h3>Gestor de Aeropuertos</h3>
                 <p>Aplicación en Java que administra rutas y aeropuertos, usando estructuras de datos.</p>
                 <a href="https://github.com/tuusuario/gestor-aeropuertos" target="_blank">Ver en GitHub</a>
             </article>
-            <!-- Video de YouTube (embed) -->
             <div>
-                <h4>Video demostrativo</h4>
+                <h3>Video demostrativo</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=MoN9ql6Yymw"
                     title="Presentación de proyectos" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
         <!-- Sección de testimonios -->
         <section id="testimonios">
-            <h2>Testimonios</h2>
+            <h2 class="subtitle">Testimonios</h2>
 
             <article>
                 <blockquote>
@@ -131,7 +135,7 @@
 
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <p>Puedes comunicarte conmigo por correo electrónico:
                 <a href="">schicha@hotmail.com</a>
             </p>
