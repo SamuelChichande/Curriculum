@@ -148,47 +148,45 @@
 
             <!-- Formulario de contacto -->
             <form action="#" method="post">
+                <legend>Envíame un mensaje</legend>
+
+                <!-- Campo de texto (una línea) -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <!-- Lista desplegable -->
+                <label for="motivo">Motivo del contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="proyecto">Propuesta de proyecto</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="consulta">Consulta general</option>
+                </select>
+
+                <!-- Opciones de selección única (radio) -->
                 <fieldset>
-                    <legend>Envíame un mensaje</legend>
-
-                    <!-- Campo de texto (una línea) -->
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-
-                    <!-- Lista desplegable -->
-                    <label for="motivo">Motivo del contacto:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="proyecto">Propuesta de proyecto</option>
-                        <option value="colaboracion">Colaboración</option>
-                        <option value="consulta">Consulta general</option>
-                    </select>
-
-                    <!-- Opciones de selección única (radio) -->
-                    <fieldset>
-                        <legend>¿Cómo prefieres que te contacte?</legend>
-                        <label><input type="radio" name="contacto" value="email" checked> Email</label>
-                        <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
-                        <label><input type="radio" name="contacto" value="whatsapp"> WhatsApp</label>
-                    </fieldset>
-
-                    <!-- Selección múltiple (checkboxes) -->
-                    <fieldset>
-                        <legend>Lenguajes de interés</legend>
-                        <label><input type="checkbox" name="lenguajes[]" value="Java"> Java</label>
-                        <label><input type="checkbox" name="lenguajes[]" value="Python"> Python</label>
-                        <label><input type="checkbox" name="lenguajes[]" value="C"> C</label>
-                        <label><input type="checkbox" name="lenguajes[]" value="C++"> C++</label>
-                        <label><input type="checkbox" name="lenguajes[]" value="Dart"> Dart</label>
-                    </fieldset>
-
-                    <!-- Área de texto -->
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
-
-                    <!-- Botón de envío -->
-                    <button type="submit">Enviar mensaje</button>
+                    <legend>¿Cómo prefieres que te contacte?</legend>
+                    <label><input type="radio" name="contacto" value="email" checked> Email</label>
+                    <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+                    <label><input type="radio" name="contacto" value="whatsapp"> WhatsApp</label>
                 </fieldset>
+
+                <!-- Selección múltiple (checkboxes) -->
+                <fieldset>
+                    <legend>Lenguajes de interés</legend>
+                    <label><input type="checkbox" name="lenguajes[]" value="Java"> Java</label>
+                    <label><input type="checkbox" name="lenguajes[]" value="Python"> Python</label>
+                    <label><input type="checkbox" name="lenguajes[]" value="C"> C</label>
+                    <label><input type="checkbox" name="lenguajes[]" value="C++"> C++</label>
+                    <label><input type="checkbox" name="lenguajes[]" value="Dart"> Dart</label>
+                </fieldset>
+
+                <!-- Área de texto -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar mensaje</button>
             </form>
         </section>
     </main>
