@@ -7,19 +7,18 @@
     <title>Mi Currículum Vitae</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Samuel Chichande</h1>
+        <h1>SAMUEL CHICHANDE</h1>
         <p>Estudiante | schicha@hotmail.com | 0987654321</p>
     </header>
-    <nav>
-        <ul>
+    <nav class="nav-bar">
+        <div class="line"></div>
+        <ul class="menu">
             <li><a href="#sobre-mi">Sobre mi</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
@@ -27,13 +26,14 @@
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <div class="line"></div>
     </nav>
     <main>
         <section id="sobre-mi">
             <h2 class="subtitle">Sobre mi</h2>
             <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
-                alt="Picsum" id="photo"/>
-            <p>Soy un programador sin mucha experiencia, pero con deseo de aprender sobre el desarrollo de aplicaciones.
+                alt="Picsum" id="photo" class="imagen"/>
+            <p class="descripcion">Soy un programador sin mucha experiencia, pero con deseo de aprender sobre el desarrollo de aplicaciones.
                 Puedes conocer mas sobre mi en <a href="https://github.com/SamuelChichande/SamuelChichande"
                     target="_blank">mi presentacion en GitHub</a>.</p>
         </section>
@@ -52,20 +52,23 @@
                         <th>Título</th>
                         <th>Año</th>
                         <th>Estado</th>
+                        <th>Certificado</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Universidad</th>
+                        <th>ESPOL</th>
                         <td>Ingeniería en Ciencias de la Computación</td>
                         <td>2022 - 2025</td>
                         <td>Cursando</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th>Curso en línea</th>
                         <td>Figma avanzado</td>
                         <td>2025</td>
                         <td>Terminado</td>
+                        <td><a href="https://www.linkedin.com/learning/certificates/86553f69b83bb5c022fb924cdf5b240c5ff3d20888b853afbe6994802df9f050?trk=share_certificate">Link</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -85,7 +88,7 @@
             <article>
                 <h3>Gestor de Aeropuertos</h3>
                 <p>Aplicación en Java que administra rutas y aeropuertos, usando estructuras de datos.</p>
-                <a href="https://github.com/tuusuario/gestor-aeropuertos" target="_blank">Ver en GitHub</a>
+                <a href="https://github.com/SamuelChichande/Proyecto_ED" target="_blank">Ver en GitHub</a>
             </article>
             <div>
                 <h3>Video demostrativo</h3>
@@ -143,7 +146,7 @@
             <!-- Mapa de Google Maps -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15960.18452784569!2d-79.9276317!3d-2.1873942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6b07d66e7a55%3A0x5b3f80ea8c3d0dbd!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1696660000000!5m2!1ses!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
 
             <!-- Formulario de contacto -->
